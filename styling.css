@@ -1,0 +1,252 @@
+body{
+    font: Arial, Helvetica, sans-serif;
+}
+#container {
+    width: 1050px;
+/*    border: 1px solid grey;*/
+    
+/*    we made border a comment because after making the page we don't need border so at last we removed it*/
+    margin: 0 auto;
+}
+
+/*container is a box that contains maths the fun way and search box*/
+
+#header{
+    height: 100px;
+    padding: 10px 0px;
+/*    (up,left)*/
+}
+/*header is box height*/
+
+
+#brand{
+    float: left;
+}
+/*maths the fun way to left*/
+
+
+h1 a{
+    font-size: 50px;
+    font-weight: 100;
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+/*    text-decoration: none means removing underline from the word that is math the fun way underlined has been removed;*/
+
+
+/*maths the fun way font size,color*/
+/*font weight is to bold the sentence "math the fun way"*/
+
+#searchBox{
+    float: right;
+    background: linear-gradient(#FFC0CB,#FF647F);
+    background: -webkit-linear-gradient(#FFC0CB,#FF647F);
+    background: -o-linear-gradient(#FFC0CB,#FF647F);
+    background: -moz-linear-gradient(#FFC0CB,#FF647F);
+/*    webkit,o,moz is compulsory to write where we are using linear gradient so that it can work in all browsers like opera,mozilla etc*/
+/*    #FFCOCB is light baby pink and 2nd rgb value is dark pink that makes a shade of both pink*/
+    width: 400px;
+    height: 50px;
+    padding: 20px  20px 0px 20px;
+        
+/*        (up,right,down,left)*/
+    margin-top: 20px
+}
+
+/*margin top is to shift whole search box with color to shift from top to down*/
+
+
+.text{
+    float: left;
+    width: 200px; 
+    padding: 5px;
+    font-size: 15px;
+    color: black;
+    background: white url(images/search.png) right center no-repeat;
+    border: 1px solid #FFC0CB;
+        
+/*    width is for search box width*/
+/*    padding will increase or decrease the whole size of search box*/
+    
+}
+
+.submit{
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background: deepskyblue;
+    font-size: 15px;
+    border: 1px solid, #DCD5E1;
+}
+
+.clear{
+    clear: both;
+}
+
+
+
+#menu{
+    height: 70px;
+    background: linear-gradient(#F5B68D,#F7707C);
+    background: -webkit-linear-gradient(#F5B68D,#F7707C);
+    background: -o-linear-gradient(#F5B68D,#F7707C);
+     background: -moz-linear-gradient(#F5B68D,#F7707C);
+    padding: 7px 0px;
+/*    padding shift the text (home,online tutorial ) into center*/
+}
+
+ul{
+    list-style: none;     
+/*    list style will remove bullet points from list*/
+    
+}
+
+#menu ul li{
+    float: left;
+    padding: 0 50px;
+    height: 30px;
+    border-right: 1px solid blue;
+/*    solid adds line between list items*/
+   
+}
+
+
+#menu ul li:last-child{
+    border-right: none;
+}
+<this menu class
+
+#menu ul li a{
+     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: blue;
+    line-height: 30px;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+    
+    /*    line height increase line and font size of list items(home,online tutorials) etc*/
+/*    last transition line work for chrome*/
+ 
+}
+
+
+#menu ul li:hover, #menu ul li a.active{
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    
+}
+/*this menu class is for movement of bullet point*/
+/*#menu ul li a.activve is to make HOME bold*/
+
+#introduction{
+    background: linear-gradient(#E5F2BB, #B7E952);
+    background: -webkit-linear-gradient(#E5F2BB, #B7E952);
+    background: -o-linear-gradient(#E5F2BB, #B7E952);
+    background: -moz-linear-gradient(#E5F2BB, #B7E952);
+    padding: 30px;
+    margin: 16px 0px;
+/*    margin (top,right) it is used to give space between two boxes*/
+    
+}
+
+#introduction h3{
+    font-size: 41px;
+    color: green;
+    font-weight: normal;
+/*    font weight makes the letter light from bold*/
+}
+
+#introduction p{
+    font-size: 25px;
+    color: #628F19;
+    text-align: justify;
+}
+
+
+.sidebar{
+    height: 500px;
+    width: 450px;
+    border: 1px solid #FF647F;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.sidebar h3{
+    color: deeppink;
+    font-size: 30px;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+/*    text decoration remove underline from year 1 ,2,3 etc*/
+    font-size: 20px;
+    color: black;
+}
+
+#leftsidebar ul{
+    padding-top: 8px;
+/*    padding top adds more space b/w Go to: and year 1 free lesson*/
+    
+}
+
+
+#rightsidebar ul li{
+   
+ padding: 2px 0 25px 20px;
+/*  owner's value  padding: 17px 0 17px 70px;*/
+     list-style-image: url(images/tick.png);
+    
+    /*    using padding top tick and points matches the center of each other */
+/*    we can use this tag instead of list style image (background: url(images/tick.png) no-repeat left center;)*/
+        
+  
+}
+
+#leftsidebar ul li{
+    padding: 3px 0 6px 10px;
+/*we also use individual padding or in one line
+    padding-bottom: 6px;
+    padding-left: 10px;
+*/
+    list-style-image: url(images/arrow.png);
+/*    padding bottom is used for giving space b/w lists( year 1 and year 2 etc)*/
+}
+
+
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration: none;
+    color: red;
+    font-size: 23px;
+    font-weight: bold;
+     -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+#leftsidebar{
+    float: left;
+}
+
+#rightsidebar{
+    float: right;
+}
+
+.footer{
+    height: 60px;
+    background: linear-gradient(#F5B68D,#F7707C);
+    background: -webkit-linear-gradient(#F5B68D,#F7707C);
+    background: -o-linear-gradient(#F5B68D,#F7707C);
+    background: -moz-linear-gradient(#F5B68D,#F7707C);
+    
+    padding: 10px 30px;
+    margin-top: 15px;
+/*    margin top creates space between two boxes i.e.,footer and go to boxes*/
+}
